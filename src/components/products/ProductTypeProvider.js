@@ -13,7 +13,7 @@ export const ProductTypeProvider = (props) => {
 
     return (
 
-        <ProductTypeContext value={productTypes, setProductTypes}>
+        <ProductTypeContext value={productTypes, getProductTypes}>
             [props.children]
         </ProductTypeContext>
 

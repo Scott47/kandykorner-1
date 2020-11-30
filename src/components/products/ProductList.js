@@ -17,7 +17,7 @@ export const ProductList = () => {
                 products.map(product => {
 
                     const matchingType = productTypes.find(type => type.id === product.productType)
-                    return <Product key={"product__" + product.id} Product={product} ProductType={matchingType} />
+                    return <Product key={product.id} Product={product} ProductType={matchingType} />
                 })
             }
         </div>

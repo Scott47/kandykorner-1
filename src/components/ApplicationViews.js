@@ -12,16 +12,16 @@ export const ApplicationViews = (props) => {
             <LocationProvider>
                 {/* Render the location list when http://localhost:3000/ */}
                 <Route exact path="/">
-                    <LocationList />
+                    <LocationList  />
                 </Route>
             </LocationProvider>
 
             <ProductProvider>
                 <ProductTypeProvider>
                     {/* Render the animal list when http://localhost:3000/animals */}
-                    <Route path="/products">
-                        <ProductList />
-                    </Route>
+                    <Route path="/products" render={props => <ProductList {...props} />}
+                        />
+            
                 </ProductTypeProvider>
             </ProductProvider>
         </>
