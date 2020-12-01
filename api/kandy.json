@@ -1,0 +1,50 @@
+{
+    "products": [
+        {
+        "id": 1,
+        "productTypeId": 1,
+        "name": "candy sticks"
+    },
+    {
+        "id": 2,
+        "productTypeId": 1,
+        "name": "candy plates"
+    },
+    {
+        "id": 3,
+        "productTypeId": 2,
+        "name": "fruity shoes"
+    }
+],
+    "locations": [
+       {
+        "id": 1,
+        "name": "Dillon's Candy Shop",
+        "address": "100 Cavity Route 86",
+        "squareFootage": 100,
+        "handicap": false
+       },
+       {
+        "id": 2,
+        "name": "Madi's Candy Shop",
+        "address": "100 Fun Happy Road",
+        "squareFootage": 10000,
+        "handicap": true
+       }
+    ],
+    "employees": [
+
+    ],
+    "productTypes": [
+        {
+            "id": 1,
+            "name": "chocolate"
+
+        },
+        {
+            "id": 2,
+            "name": "stank fruit"
+        }
+    ],
+    "customers": []
+  }

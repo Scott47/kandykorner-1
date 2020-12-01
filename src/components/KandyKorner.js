@@ -1,14 +1,10 @@
-import { LocationProvider } from './locations/LocationProvider';
-import { LocationList } from './locations/LocationList';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react"
+import { NavBar } from "./nav/NavBar"
+import { ApplicationViews } from "./ApplicationViews"
 
-export const KandyKorner = () => {
-    return(
-        <>
-            <LocationProvider>
-                <LocationList />
-            </LocationProvider>
-        </>
-    )
-}
+export const KandyKorner = () => (
+    <>
+        <NavBar />
+        <ApplicationViews />
+    </>
+)
