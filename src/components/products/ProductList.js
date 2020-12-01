@@ -3,7 +3,7 @@ import { ProductContext } from "./ProductProvider"
 import { Product } from "./Product"
 import { ProductTypeContext } from "./ProductTypeProvider"
 
-export const ProductList = () => {
+export const ProductList = (props) => {
     const { products, getProducts } = useContext(ProductContext)
     const { productTypes, getProductTypes } = useContext(ProductTypeContext)
 
@@ -16,7 +16,7 @@ export const ProductList = () => {
             {
                 products.map(product => {
 
-                    const matchingType = productTypes.find(type => type.id === product.productType)
+                    const matchingType = productTypes.find(type => type.id === product.productTypeId)
                     return <Product key={product.id} Product={product} ProductType={matchingType} />
                 })
             }
